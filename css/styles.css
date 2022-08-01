@@ -636,7 +636,6 @@ img {
   border-radius: 4px;
 
   background-color: var(--bgc-secondary);
-  color: var(--logo-footer-color);
 }
 
 .form-btn {
@@ -692,6 +691,7 @@ img {
 
   width: 528px;
   height: 581px;
+  padding: 40px;
 
   background-color: var(--logo-footer-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -713,6 +713,66 @@ img {
   margin-top: 8px;
   margin-right: 8px;
   padding: 0;
+}
+
+.register-form {
+  text-align: center;
+}
+
+.reg-title {
+  display: block;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 12px;
+
+  color: var(--title-text-color);
+}
+.reg-group {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.reg-wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.reg-wrap:last-child {
+  margin-bottom: 0;
+}
+
+.reg-form-lable {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+
+  color: var(--text-color);
+}
+.reg-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.reg-icons {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+}
+.reg-message {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
 }
 
 /* Portfolio */

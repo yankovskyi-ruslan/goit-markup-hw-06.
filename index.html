@@ -633,6 +633,55 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="register-form">
+          <strong class="reg-title"
+            >Оставьте свои данные, мы вам перезвоним</strong
+          >
+          <div class="reg-group" role="group">
+            <label class="reg-wrap" for="name">
+              <span class="reg-form-lable">Имя</span>
+              <input class="reg-input" type="text" id="name" />
+              <svg class="reg-icons" width="12" height="12">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </label>
+            <label class="reg-wrap" for="phone">
+              <span class="reg-form-lable">Телефон</span>
+              <input class="reg-input" type="tel" id="phone" />
+              <svg class="reg-icons" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </label>
+            <label class="reg-wrap" for="mail">
+              <span class="reg-form-lable">Почта</span>
+              <input class="reg-input" type="email" id="mail" />
+              <svg class="reg-icons" width="15" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </label>
+            <label class="reg-wrap" for="coment">
+              <span class="reg-form-lable">Комментарий</span>
+              <textarea
+                class="reg-message"
+                rows=""
+                id="coment"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+          </div>
+          <label for="">
+            <input type="checkbox" name="agreement" />
+            <svg width="" height="">
+              <use></use>
+              <use></use>
+            </svg>
+            <span
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a></span
+            >
+          </label>
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
