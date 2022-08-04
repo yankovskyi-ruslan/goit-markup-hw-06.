@@ -17,6 +17,18 @@
   color: var(--title-text-color);
   margin: auto;
 }
+/* .visualy-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: (0 0 0 0);
+  clip-path: inset(50%);
+  margin: 1px;
+} */
 .no-scroll {
   overflow: hidden;
 }
@@ -280,7 +292,8 @@ img {
   background-color: #188ce8;
 }
 .hero-btn,
-.filters-btn {
+.filters-btn,
+.send-btn {
   cursor: pointer;
 }
 
@@ -767,12 +780,67 @@ img {
   top: 35px;
   left: 10px;
 }
+.reg-icons:focus {
+  color: var(--akcent-color);
+}
 .reg-message {
   width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  padding: 12px 16px;
+}
+
+.agree-form {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.agree-input:checked + .agree-icon .agree-icon-uncheck {
+  opacity: 0;
+}
+
+.agree-input:checked + .agree-icon .agree-icon-check {
+  opacity: 1;
+}
+
+.agree-icon-check {
+  opacity: 0;
+}
+
+.agree-txt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  user-select: none;
+
+  color: var(--text-color);
+}
+
+.send-btn {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 10px 55px;
+  margin: auto;
+  gap: 10px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  color: var(--logo-footer-color);
+  background-color: var(--akcent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  background-color: #188ce8;
 }
 
 /* Portfolio */

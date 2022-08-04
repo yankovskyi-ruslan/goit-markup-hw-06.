@@ -669,18 +669,28 @@
               ></textarea>
             </label>
           </div>
-          <label for="">
-            <input type="checkbox" name="agreement" />
-            <svg width="" height="">
-              <use></use>
-              <use></use>
+          <label class="agree-form" for="">
+            <input
+              class="agree-input visualy-hidden"
+              type="checkbox"
+              name="agreement"
+            />
+            <svg class="agree-icon" width="16" height="15">
+              <use
+                class="agree-icon-uncheck"
+                href="./images/icons.svg#icon-uncheck"
+              ></use>
+              <use
+                class="agree-icon-check"
+                href="./images/icons.svg#icon-check"
+              ></use>
             </svg>
-            <span
+            <span class="agree-txt"
               >Соглашаюсь с рассылкой и принимаю
-              <a href="">Условия договора</a></span
+              <a class="agree-link" href="">Условия договора</a></span
             >
           </label>
-          <button type="submit">Отправить</button>
+          <button class="send-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
