@@ -608,7 +608,7 @@
         </div>
         <div class="footer-form">
           <h3 class="form-txt">Подпишитесь на рассылку</h3>
-          <div class="mail-form">
+          <form class="mail-form">
             <input
               class="footer-input"
               type="email"
@@ -621,7 +621,7 @@
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -640,21 +640,21 @@
           <div class="reg-group" role="group">
             <label class="reg-wrap" for="name">
               <span class="reg-form-lable">Имя</span>
-              <input class="reg-input" type="text" id="name" />
+              <input class="reg-input" type="text" name="Имя" id="name" />
               <svg class="reg-icons" width="12" height="12">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </label>
             <label class="reg-wrap" for="phone">
               <span class="reg-form-lable">Телефон</span>
-              <input class="reg-input" type="tel" id="phone" />
+              <input class="reg-input" type="tel" name="Телефон" id="phone" />
               <svg class="reg-icons" width="13" height="13">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </label>
             <label class="reg-wrap" for="mail">
               <span class="reg-form-lable">Почта</span>
-              <input class="reg-input" type="email" id="mail" />
+              <input class="reg-input" type="email" name="Почта" id="mail" />
               <svg class="reg-icons" width="15" height="12">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
@@ -663,7 +663,6 @@
               <span class="reg-form-lable">Комментарий</span>
               <textarea
                 class="reg-message"
-                rows=""
                 id="coment"
                 placeholder="Введите текст"
               ></textarea>

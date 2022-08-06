@@ -726,6 +726,7 @@ img {
 
   width: 30px;
   height: 30px;
+  background-color: transparent;
 
   cursor: pointer;
   border-radius: 50%;
@@ -753,7 +754,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   color: var(--title-text-color);
 }
@@ -765,7 +766,7 @@ img {
 .reg-wrap {
   position: relative;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   text-align: left;
 }
 
@@ -776,9 +777,10 @@ img {
 .reg-form-lable {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.67;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   cursor: pointer;
+  margin-bottom: 4px;
 
   color: var(--text-color);
 }
@@ -825,6 +827,7 @@ img {
   margin-bottom: 30px;
   gap: 7px;
   align-items: center;
+  justify-content: center;
 }
 
 .agree-input:checked + .agree-icon .agree-icon-uncheck {
@@ -834,6 +837,10 @@ img {
 .agree-input:checked + .agree-icon .agree-icon-check {
   opacity: 1;
   fill: var(--logo-footer-color);
+}
+
+.agree-input:focus + .agree-icon .agree-icon-uncheck {
+  fill: var(--accent-color);
 }
 
 .agree-icon-check {
