@@ -828,6 +828,15 @@ img {
   gap: 7px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.agree-form:focus-within {
+  color: var(--akcent-color);
+}
+
+.agree-input:focus + .agree-icon .agree-icon-uncheck {
+  fill: var(--accent-color);
 }
 
 .agree-input:checked + .agree-icon .agree-icon-uncheck {
@@ -841,6 +850,10 @@ img {
 
 .agree-input:focus + .agree-icon .agree-icon-uncheck {
   fill: var(--accent-color);
+}
+
+.agree-icon:focus-within {
+  fill: var(--akcent-color);
 }
 
 .agree-icon-check {
@@ -861,6 +874,10 @@ img {
   color: var(--akcent-color);
 }
 
+.agree-link:focus {
+  border-color: var(--akcent-color);
+}
+
 .send-btn {
   display: inline-flex;
   align-items: flex-start;
@@ -878,6 +895,8 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  transition: background-color var(--animation);
 }
 
 .send-btn:hover,
