@@ -17,6 +17,7 @@
   color: var(--title-text-color);
   margin: auto;
 }
+
 .visualy-hidden {
   position: absolute;
   white-space: nowrap;
@@ -25,9 +26,12 @@
   overflow: hidden;
   border: 0;
   padding: 0;
-  clip: (0 0 0 0);
   clip-path: inset(50%);
   margin: 1px;
+}
+
+.visualy-hidden:focus + .agree-icon .agree-icon-uncheck {
+  fill: var(--akcent-color);
 }
 
 .no-scroll {
@@ -758,6 +762,7 @@ img {
 
   color: var(--title-text-color);
 }
+
 .reg-group {
   display: block;
   margin-bottom: 20px;
@@ -784,6 +789,7 @@ img {
 
   color: var(--text-color);
 }
+
 .reg-input {
   width: 448px;
   height: 40px;
@@ -831,11 +837,7 @@ img {
   cursor: pointer;
 }
 
-.agree-form:focus-within {
-  color: var(--akcent-color);
-}
-
-.agree-input:focus + .agree-icon .agree-icon-uncheck {
+.agree-form:focus ~ .agree-icon .agree-icon-uncheck {
   fill: var(--accent-color);
 }
 
@@ -846,14 +848,6 @@ img {
 .agree-input:checked + .agree-icon .agree-icon-check {
   opacity: 1;
   fill: var(--logo-footer-color);
-}
-
-.agree-input:focus + .agree-icon .agree-icon-uncheck {
-  fill: var(--accent-color);
-}
-
-.agree-icon:focus-within {
-  fill: var(--akcent-color);
 }
 
 .agree-icon-check {
@@ -875,7 +869,7 @@ img {
 }
 
 .agree-link:focus {
-  border-color: var(--akcent-color);
+  border-color: currentColor;
 }
 
 .send-btn {
